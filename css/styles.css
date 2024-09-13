@@ -1,0 +1,49 @@
+/* Make sure the body and html are set to full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container takes full viewport height */
+.container {
+    height: 100%;
+    position: relative;
+}
+
+/* Image fills the entire background, keeping its aspect ratio */
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the full screen while keeping aspect ratio */
+    z-index: -1; /* Sends the image to the background, so content can appear above */
+}
+
+/* Center the content on the page */
+h1, p, footer {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20%;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+}
