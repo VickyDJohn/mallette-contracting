@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": ".",   // Serve from the root directory
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [    // Ensure all routes go to index.html
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
